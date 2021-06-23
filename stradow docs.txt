@@ -1,0 +1,45 @@
+/*
+	Clases y metodos Wecor
+	(Se require usar el namespace wecor)
+*/
+routes::add( 'seccion', 'controlador_seccion' );
+
+/*
+	Archivos principales para un tema
+*/
+themes/
+	themename/
+		screenshot.jpg
+		info.json
+		php/
+			frontoffice.php
+			backoffice.php
+		
+
+
+
+/*
+	Contenido del archivo info.json
+*/
+{
+	"name": "Theme Default",
+	"descrip": "Lorem ipsum dolor sit amet"
+}
+
+/*
+	Constantes usables dentro de los archivos del tema
+	(Se require usar el namespace wecor)
+*/
+
+THEME_PATH = Camino dentro del sistema de archivos del servidor hasta la carpeta del tema
+THEME_URL = URL absoluta del tema
+APP_ROOT = URL absoluta del sitio
+
+/*
+	Metodos de la clase abstracta site
+	(Se require usar el namespace wecor)
+*/
+//Metodo para obtener datos de la tabla site
+string site::getInfo($column)
+	string $column - Nombre de la columna requerida
+	Retorna cadena con los datos de la columna solicitada
